@@ -6,7 +6,7 @@
 // $password = "";
 
 // configurações do db4free.net / produção
-$servername = "localhost";
+$servername = "db4free.net";
 $username = "alanldv";
 $password = "admin123";
 
