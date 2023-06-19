@@ -1,14 +1,14 @@
 <?php
 
 // configurações locais / desenvolvimento
-$servername = "localhost";
-$username = "root";
-$password = "";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
 
 // configurações do db4free.net / produção
-// $servername = "localhost";
-// $username = "alanldv";
-// $password = "admin123";
+$servername = "localhost";
+$username = "alanldv";
+$password = "admin123";
 
 $dbname = "projeto_des_web";
 
