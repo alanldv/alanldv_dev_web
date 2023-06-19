@@ -1,7 +1,15 @@
 <?php
+
+// configurações locais / desenvolvimento
 $servername = "localhost";
 $username = "root";
 $password = "";
+
+// configurações do db4free.net / produção
+// $servername = "localhost";
+// $username = "alanldv";
+// $password = "admin123";
+
 $dbname = "projeto_des_web";
 
 try {
@@ -20,9 +28,10 @@ try {
   $telefone = $_POST['telefone'];
   $mensagem = $_POST['mensagem'];
   $stmt->execute();
-  // troca mensagem para que seja exibida em forma de alerta para
-  // o usuário e limpar os campos do formulário.
-  echo "Dados enviados com sucesso!";
+  echo "<script type='text/javascript'>
+          alert('Dados enviados com sucesso!');
+          window.location.href = './contato.html'; 
+        </script>";
 } catch(PDOException $e) {
   echo "Erro: " . $e->getMessage();
 }
