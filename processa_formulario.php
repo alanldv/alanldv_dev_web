@@ -1,14 +1,14 @@
 <?php
 
 // configurações locais / desenvolvimento
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
+$servername = "localhost";
+$username = "root";
+$password = "";
 
 // configurações do db4free.net / produção
-$servername = "db4free.net";
-$username = "alanldv";
-$password = "admin123";
+// $servername = "db4free.net";
+// $username = "alanldv";
+// $password = "admin123";
 
 $dbname = "projeto_des_web";
 
@@ -29,7 +29,7 @@ try {
   $mensagem = $_POST['mensagem'];
   $stmt->execute();
   echo "<script type='text/javascript'>
-          alert('Dados enviados com sucesso!');
+          alert('Mensagem enviada com sucesso!');
           window.location.href = './contato.html'; 
         </script>";
 } catch(PDOException $e) {
